@@ -1,0 +1,144 @@
+body{
+	margin:0px;
+	padding: 0px;
+}
+/* Three articles */
+#art-1{
+	width: 69%;
+	height: 700px;
+	background-color: #cc0000;
+	float: left;
+}
+
+#art-2{
+	width: 1%;
+	height: 700px;
+	background-color: #FFF;
+	float: left;
+}
+
+#art-3{
+	width: 30%;
+	height: 700px;
+	background-color: #00e6ac;
+	float: left;
+}
+
+/* Article 1 */
+#art-1 nav{
+	width: 100%;
+	height: 40px;
+	background-color: #4dff88;
+	float: left;
+}
+
+#art-1 section{
+	width: 100%;
+	height: 330px;
+	background-color: blue;
+	float: left;
+}
+
+#art-1 div{
+	width: 100%;
+	height: 330px;
+	background-color: #6600ff;
+	float: left;
+}
+
+/* Article 3 elements*/
+#art-3 h1{
+	text-align: center;
+	color: #FFF;
+	font-size: 26px;
+	margin-top: 10%;
+}
+
+/******* 3 Buttons after h1 *******/
+#art1-art3, #art2-art3, #art3-art3, #art4-art3 {
+	width: 100%;
+}
+
+#art1-art3 input[type=button]:hover {
+    background-color: white; 
+    color: black; 
+}
+
+
+/******* 4 Buttons Change Nav, Sec, Div Bg *******/
+button{
+	width: 20%;
+    padding: 20px 20px;
+    margin-left: 2%;
+    border: 2px solid #4CAF50;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 6px;
+}
+
+button:hover{
+	cursor: pointer;
+}
+
+.left-art{
+	background-color: yellow;
+	margin-left: 22%;
+	width: 80%;
+}
+
+/* Button _ colors */
+#blue1, #blue2, #blue3 {
+	background-color: #3498db;
+}
+
+#gray1, #gray2, #gray3 {
+	background-color: #737373;
+}
+
+#orange1, #orange2, #orange3 {
+	background-color: #ff751a;
+}
+
+/* Hoover button style*/
+#blue1:hover, #blue2:hover, #blue3:hover{
+	background-color: #3cb0fd;
+}
+
+/******* 4 Buttons Change Sec Bg *******/
+
+
+
+/******* 4 Buttons Change Div Bg *******/
+
+
+
+
+/******* Button style - .class *******/
+.button{
+	background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 6px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+input[type=button]{
+	width: 40%;
+    padding: 12px 20px;
+    margin-left: 30%;
+    background-color: #4CAF50;
+    color: white;
+    border: 2px solid #4CAF50;
+}
+
+#art2-art3 input[type=button]:hover, #art3-art3 input[type=button]:hover, #art4-art3 input[type=button]:hover{
+	background-color: green;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}

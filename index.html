@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<!-- Developed by: Evelyn M -->
+<html>
+<head>
+	<title>Setting Pannel</title>
+
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<section id="contaner1">
+<!-- First article which contains Nav, Section, and Div -->
+	<article id="art-1"> 
+		<nav id="nav1"> <span>Navigation Bar</span> </nav> 
+		<section id="sec1"> <span>Section</span> </section>
+		<div id="div1"> <span>Div</span> </div>
+
+	</article>
+
+<!-- White Line between two articles-->
+	<article id="art-2"> </article>
+
+<!-- Third Part : Setting pannel section inside article 3-->
+	<article id="art-3">
+		<h1> SETTING </h1>
+		<!-- Three Buttons at the beginning -->
+		<article id="art1-art3">
+			<input type="button" class="button" value="Hide/Show Nav" onclick="showNav()"> <br> 
+			<input type="button" class="button" value="Hide/Show Sec" onclick="showSec()"> <br> 
+			<input type="button" class="button" value="Hide/Show Div" onclick="showDiv()">
+		</article>
+
+		<article>
+<!-- First article for Part Three _ Change Nav Bg -->
+			<article id="art2-art3">
+				<article class="left-art">
+				<button id="blue1" onclick="blueColor(this.id)"></button>
+				<button id="gray1" onclick="grayColor(this.id)"></button>
+				<button id="orange1" onclick="oranColor(this.id)"></button>
+				</article> <br> <br>
+				<input type="button" id="changebg-nav" class="button" value="Change Nav Bg" onclick="navColor(this.id)">
+			</article>
+<!-- Second article _ Change  Sec Bg-->
+			<article id="art3-art3">
+				<article class="left-art">
+				<button id="blue2" onclick="blueColor(this.id)"></button> 
+				<button id="gray2" onclick="grayColor(this.id)"></button>
+				<button id="orange2" onclick="oranColor(this.id)"></button>
+				</article> <br> <br>
+				<input type="button" id="changebg-sec" class="button" value="Change Sec Bg" onclick="sectColor()">
+			</article>
+<!-- Third Part _ Change Div Bg-->
+			<article id="art4-art3">
+				<article class="left-art">
+				<button id="blue3" onclick="blueColor(this.id)"></button>
+				<button id="gray3" onclick="grayColor(this.id)"></button>
+				<button id="orange3" onclick="oranColor(this.id)"></button>
+				</article> <br> <br>
+				<input type="button" id="changebg-div" class="button" value="Change Div Bg" onclick="divColor()">
+			</article>
+
+		</article>
+
+	</article>
+
+<!-- Ending -->
+</section>
+
+
+<!-- Script -->
+<script type="text/javascript">
+	/************************ Hide/ Show each part Nav, Section and DIv ***********/
+	//SHow/Hide NAvigation
+	var showhide=0;
+
+	function showNav()
+		{
+		if (showhide===0) {
+			document.getElementById("nav1").style.display="none"; // Hide the element
+			showhide=1;
+		}
+		else if (showhide===1) {
+			document.getElementById("nav1").style.display="block"; // Show the element
+			showhide=0;
+		}
+		
+	}
+
+
+
+	// Show/Hide Section
+	function showSec()
+	{
+	if (showhide===0) {
+		document.getElementById("sec1").style.display="none"; // Hide the element
+		showhide=1;
+	}
+	else if (showhide===1) {
+		document.getElementById("sec1").style.display="block"; // Show the element
+		showhide=0;
+	}
+	
+}
+
+	//Show/Hide Div
+	function showDiv()
+	{
+	if (showhide===0) {
+		document.getElementById("div1").style.display="none"; // Hide the element
+		showhide=1;
+	}
+	else if (showhide===1) {
+		document.getElementById("div1").style.display="block"; // Show the element
+		showhide=0;
+	}
+	
+}
+
+
+/***************  CHange Bg ***********************/
+
+/************************************* Blue Color Bg **********************************/
+
+	var blue1=document.getElementById("blue1").style.backgroundColor= "#3498db";
+	var blue2=document.getElementById("blue2").style.backgroundColor= "#3498db";
+	var blue3=document.getElementById("blue2").style.backgroundColor= "#3498db";
+
+	function blueColor(id) {
+		var div = document.getElementById(id);
+		switch(id){
+			case "blue1":{
+				if (div.id=="blue1") {
+				document.getElementById("nav1").style.backgroundColor= blue1;
+				}
+				break;
+			}
+		
+			case "blue2":{
+				if (div.id=="blue2") {
+				document.getElementById("sec1").style.backgroundColor= blue2;
+				}
+				break;
+			}
+
+			case "blue3":{
+				if (div.id=="blue3") {
+				document.getElementById("div1").style.backgroundColor= blue3;
+				}
+				break;
+			}
+
+
+		}
+		
+	}
+
+
+/************************************* Gray Color Bg **********************************/
+
+	var gray1 = document.getElementById("gray1").style.backgroundColor="#737373";
+	var gray2 = document.getElementById("gray2").style.backgroundColor="#737373";
+	var gray3 = document.getElementById("gray3").style.backgroundColor="#737373";
+
+	function grayColor(id) {
+			var div = document.getElementById(id);
+			switch(id){
+				case "gray1":{
+					if (div.id=="gray1") {
+					document.getElementById("nav1").style.backgroundColor= gray1;
+					}
+					break;
+				}
+			
+				case "gray2":{
+					if (div.id=="gray2") {
+					document.getElementById("sec1").style.backgroundColor= gray2;
+					}
+					break;
+				}
+
+				case "gray3":{
+					if (div.id=="gray3") {
+					document.getElementById("div1").style.backgroundColor= gray3;
+					}
+					break;
+				}
+
+
+			}
+			
+		}
+	
+
+
+
+/************************************* Orange Color Bg **********************************/
+
+	var orange1 = document.getElementById("orange1").style.backgroundColor="#ff751a";
+	var orange2 = document.getElementById("orange2").style.backgroundColor="#ff751a";
+	var orange3 = document.getElementById("orange3").style.backgroundColor="#ff751a";
+
+	function oranColor(id) {
+		var div = document.getElementById(id);
+			switch(id){
+				case "orange1":{
+					if (div.id=="orange1") {
+					document.getElementById("nav1").style.backgroundColor= orange1;
+					}
+					break;
+				}
+			
+				case "orange2":{
+					if (div.id=="orange2") {
+					document.getElementById("sec1").style.backgroundColor= orange2;
+					}
+					break;
+				}
+
+				case "orange3":{
+					if (div.id=="orange3") {
+					document.getElementById("div1").style.backgroundColor= orange3;
+					}
+					break;
+				}
+
+
+			}
+		
+	}
+
+/***************  CHange Bg back to normal ***********************/
+
+
+	function navColor() {
+		document.getElementById("nav1").style.background = document.getElementById("nav1").style.background;
+	}
+
+	function sectColor() {
+		document.getElementById("sec1").style.backgroundColor = document.getElementById("sec1").style.background;
+	}
+
+	function divColor() {
+		document.getElementById("div1").style.backgroundColor = document.getElementById("div1").style.background;
+	}
+
+</script>
+
+</body>
+</html>
